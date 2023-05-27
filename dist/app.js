@@ -1,39 +1,32 @@
-var age;
-var toggle;
-var empty;
-var name1;
-var notInitialize;
-var callback = function (argg) { return number; };
-age = 50;
+"use strict";
+let age1;
+let toggle;
+let empty;
+let name1;
+let notInitialize;
+age1 = 50;
 toggle = true;
 empty = null;
 name1 = "Max";
 notInitialize = undefined;
-callback = function (a) {
-    return 100 + a;
-};
-// ================================================
-var anything;
-anything = -20;
+let anything;
+anything = -2;
 anything = "Text";
 anything = {};
-// ================================================
-var some;
+let some;
 some = "Text";
-var str;
+let str;
 if (typeof some === "string") {
     str = some;
 }
-// ================================================
-var person;
+let person;
 person = ["Max", 21];
-// ================================================
 var Stage;
 (function (Stage) {
     Stage[Stage["LOADING"] = 0] = "LOADING";
     Stage[Stage["READY"] = 1] = "READY";
 })(Stage || (Stage = {}));
-var filmStage = {
+const filmStage = {
     stageNow: Stage.READY,
 };
 if (filmStage.stageNow === Stage.READY) {
@@ -42,33 +35,20 @@ if (filmStage.stageNow === Stage.READY) {
 if (filmStage.stageNow === Stage.LOADING) {
     console.log("A Film is still loading");
 }
-// ================================================
-var something;
+let something;
 something = "1";
-// ================================================
-// 'enable' або 'disable'
-var acces;
+let acces;
 acces = "disable";
-// ================================================
-// function showMessage(message) {
-//   console.log(message);
-// }
 function showMessage(message) {
     console.log(message);
 }
-// function calc(num1, num2) {
-//   return num1 + num2;
-// }
 function calc(num1, num2) {
     return num1 + num2;
 }
-// function customError() {
-//   throw new Error("Error");
-// }
 function customError() {
     throw new Error("Error");
 }
-var page1 = {
+const page1 = {
     title: "The awesome page",
     likes: 100,
     accounts: ["Max", "Anton", "Nikita"],
@@ -78,9 +58,10 @@ var page1 = {
         updateAt: new Date("2021-05-01"),
     },
 };
-var page2 = {
+const page2 = {
     title: "Python or Js",
     likes: 5,
     accounts: ["Alex"],
     status: "close",
 };
+//# sourceMappingURL=app.js.map

@@ -1,23 +1,23 @@
-let age: number;
+let age1: number;
 let toggle: boolean;
 let empty: null;
 let name1: string;
 let notInitialize: undefined;
-let callback = (argg: number) => number;
+// let callback = (argg: number) => number;
 
-age = 50;
+age1 = 50;
 toggle = true;
 empty = null;
 name1 = "Max";
 notInitialize = undefined;
-callback = (a) => {
-  return 100 + a;
-};
+// callback = (a) => {
+//   return 100 + a;
+// };
 
 // ================================================
 let anything: any;
 
-anything = -20;
+anything = -2;
 anything = "Text";
 anything = {};
 
@@ -52,6 +52,21 @@ if (filmStage.stageNow === Stage.READY) {
 if (filmStage.stageNow === Stage.LOADING) {
   console.log("A Film is still loading");
 }
+// enum Load {
+//   LOADING,
+//   READY,
+// }
+
+// const page = {
+//   load: Load.READY,
+// };
+
+// if (page.load === Load.LOADING) {
+//   console.log("Сторінка завантажується");
+// }
+// if (page.load === Load.READY) {
+//   console.log("Сторінка завантажена");
+// }
 // ================================================
 let something: string | number;
 
