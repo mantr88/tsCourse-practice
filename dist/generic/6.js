@@ -9,6 +9,6 @@
 function createOrUpdateUser(initialValues) {
     // Оновлення користувача
 }
-createOrUpdateUser({ email: 'user@mail.com', password: 'password123' });
+createOrUpdateUser({ email: "user@mail.com", password: "password123" });
 export {};
 //# sourceMappingURL=6.js.map
