@@ -1,0 +1,60 @@
+// Концепція ООП Агрегація
+// Клас містить інший клас, але не керує його життєвим циклом.
+class Team {
+    constructor(members) {
+        this.members = members;
+    }
+    startProject() {
+        this.members.forEach((member) => member.code());
+    }
+}
+class Programmer {
+    code() {
+        console.log("Coding...");
+    }
+}
+const programmers = [new Programmer(), new Programmer()];
+const team = new Team(programmers);
+team.startProject();
+// Концепція ООП Композиція
+// Клас містить у собі інший клас та керує його життєвим циклом.
+class Computer {
+    constructor() {
+        this.processor = new Processor();
+    }
+    start() {
+        this.processor.processData();
+    }
+}
+class Processor {
+    processData() {
+        console.log("Processing data...");
+    }
+}
+const computer = new Computer();
+computer.start();
+// Концепція ООП Асоціація
+// Класи взаємодіють один з одним.
+class Car {
+    constructor() {
+        this.driver = null;
+    }
+    setDriver(driver) {
+        this.driver = driver;
+    }
+    startJourney() {
+        if (this.driver) {
+            this.driver.drive();
+        }
+    }
+}
+class Driver {
+    drive() {
+        console.log("Driving...");
+    }
+}
+const driver = new Driver();
+const car = new Car();
+car.setDriver(driver);
+car.startJourney();
+//# sourceMappingURL=someConceptsOop.js.map
