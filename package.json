@@ -1,11 +1,30 @@
 {
-  "name": "typescript-homework-module-3",
+  "name": "ts-course-node",
   "version": "1.0.0",
-  "description": "",
+  "description": "Клас Student, який містить три властивості: name, age та grade. Замість того, щоб оголошувати ці властивості в тілі класу, потім у конструкторі, і нарешті надавати їм значення, напишіть скорочену ініціалізацію. ```ts class Student {   public name: string;   public age: number;   public grade: string;",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r tsconfig-paths/register ./dist/main.js",
+    "dev": "nodemon",
+    "build": "tsc -p tsconfig.json"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^5.1.5"
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "reflect-metadata": "^0.2.1",
+    "routing-controllers": "^0.10.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.6",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3"
   }
 }
